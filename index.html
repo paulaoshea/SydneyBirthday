@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sydney Password!</title>
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("passwordBox");
+      var passwordText = password.value;
+      if (passwordText == "Sydney123!") {
+        return true;
+      }
+      alert("Access denied! Incorrect password!");
+      return false;
+    }
+  </script>
+  <style>
+    body {
+      text-align: center;
+      background-color: LavenderBlush;
+      padding: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <p style="font-size: 30pt;">!PASSWORD!</p>
+  <p>Please enter the password to veiw this website.</p>
+  <p>Password:<input id="passwordBox" type="password" /></p>
+
+  <a href="SydneyPage.html" onclick="return checkPassword();">
+    Click here to submit password
+  </a>
+</br>
+<img style="height:300px;" src="key.png"></img>
+</body>
+
+</html>
